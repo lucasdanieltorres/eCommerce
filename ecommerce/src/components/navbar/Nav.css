@@ -1,0 +1,45 @@
+nav {
+    background-color: #87BBE6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logoTitulo {
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    gap: 15px;
+}
+
+.logoTitulo img {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+  background-color: #D0DEEA;
+  border-radius: 05px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+nav ul li {
+  color: #242424;
+  text-decoration: none;
+}
+
+  nav ul li:hover {
+    color: #54575a;
+}
+
+#logoCarrito {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+
+}

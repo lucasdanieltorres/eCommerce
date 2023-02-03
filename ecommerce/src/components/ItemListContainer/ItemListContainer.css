@@ -1,0 +1,31 @@
+
+
+#ilc {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 245, 245);
+    border-radius: 10px;
+  }
+
+#ilc img {
+  width: 190px;
+  height: 210px;
+}
+
+.listado {
+  border: 1px solid rgba(173, 214, 214, 0.842);
+  width: 85%;
+  padding: 20px;
+  border-radius: 06px;
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
