@@ -14,12 +14,12 @@ let productos = [
     {id: 13, categoria: "liquidos", nombre: "Alcohol 70%", precio: 799, img: '/products/liquidos/alcohol.webp'}
 ]
 
-export const mPromise = () => {
+export const mPromise = (id) => {
     return new Promise((resolve, reject)=> {
+
         setTimeout(()=> {
-            resolve(productos)},2000)
-    })
+
+            resolve(id ? productos.find( prod => prod.id == parseInt(id)) : productos)},2000)
+     }
+    )
 }
-
-
-

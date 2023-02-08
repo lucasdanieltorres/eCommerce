@@ -6,16 +6,23 @@ nav {
     padding: 10px;
 }
 
-.logoTitulo {
-    display: flex;
+#logoTitulo {
     margin-left: 25px;
-    align-items: center;
     gap: 15px;
+    text-decoration: none;
+    color: #1d1d1d;
 }
 
-.logoTitulo img {
+#logoTitulo img {
     height: 50px;
     width: 50px;
+}
+
+#logoTitulo div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }
 
 nav ul {

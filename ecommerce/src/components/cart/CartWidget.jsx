@@ -1,6 +1,6 @@
 const LogoCarrito = () => {
     return (
-        <img id="logoCarrito" src="../public/carrito-de-compras.png"/>
+        <img id="logoCarrito" src="/carrito-de-compras.png"/>
     )
 }
 

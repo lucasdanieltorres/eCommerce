@@ -5,9 +5,9 @@ import './Nav.css'
 
 const Nav = () => {
     return (
-        <nav className='mx-auto my-auto w-100'>
-            <Link to={"/"}><div className='logoTitulo'>
-                <img src='../public/icon.png'/>
+        <nav>
+            <Link to={"/"} id="logoTitulo"><div>
+                <img src='/icon.png'/>
                 <h1>Clean Solutions</h1>
             </div></Link>
             <ul>
