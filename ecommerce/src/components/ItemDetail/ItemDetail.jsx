@@ -15,7 +15,7 @@ const ItemDetail = ({ producto }) => {
     console.log(cant)
     agregarCarrito({...producto, cantidad: cant}) //
   }
-  console.log(cartList)
+  // console.log(cartList)
 
   return (
     <div className="container">

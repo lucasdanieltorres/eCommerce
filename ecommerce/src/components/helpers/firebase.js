@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 //sdk firebase
-import {getFirestore, collection, getDocs} from "firebase/firestore";
+import {getFirestore, collection, getDocs, getDoc, doc} from "firebase/firestore";
 
 
 
@@ -23,18 +23,29 @@ export async function mPromise () {
     //ref a la coleccion
     const productsCollectionRef = collection(db, "productos")
     //pedir a FB los documentos de la coleccion
-    // getDocs(productsCollectionRef).then( snapshot => {
-    //                                         // console.log(snapshot.docs[0].data())
-    //                                         const docsData = snapshot.docs.map( doc => doc.data());
-    //                                         console.log(docsData);                                        
-    //                                     });
+
 
     const snapshot = await getDocs(productsCollectionRef);
-    const docsData = snapshot.docs.map( doc => doc.data());
+    const docsData = snapshot.docs.map( doc => {
+        return {...doc.data(), id: doc.id};
+    });
     console.log(docsData);
-    return (docsData); // es como si fuera un resolve, se puede leer con .then 
-    
+    return (docsData); 
+
 }
+
+export async function getSingleItem(prodId)  {
+    //ref a la coleccion
+    const productsCollectionRef = collection(db, "productos")
+
+    //2 ref al document 
+    const docRef = doc(productsCollectionRef, prodId);
+    //3 recibimos el snapshot con getdoc
+    const snapshot = await getDoc(docRef);
+    const singleItem = snapshot._document ?  ({...snapshot.data(), id: snapshot.id}) : snapshot._document;
+    console.log(singleItem);
+    return singleItem; 
+} 
 
 
 
