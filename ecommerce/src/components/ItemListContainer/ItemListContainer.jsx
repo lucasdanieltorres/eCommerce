@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import { mPromise } from "../helpers/fetch"
+import { mPromise } from "../helpers/firebase";
 import { ItemList } from "../ItemList/ItemList";
+import Loader from "../Loader/Loader";
 
 const ItemListContainer = () => {
     const[productos, setProductos] = useState([]);
@@ -37,9 +38,11 @@ const ItemListContainer = () => {
 
             <div className="listado text-center">   
                 {   loading ? 
-                        <h3 className="mx-auto">Cargando...</h3>
+
+                        <Loader/>
+
                         :
-                        
+
                        <ItemList productos={productos}/>
                                                              
                 } 

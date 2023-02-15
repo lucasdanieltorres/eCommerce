@@ -1,6 +1,13 @@
+import { useCartContext } from "../../context/CartContext";
+
 const LogoCarrito = () => {
+    const {cartList} = useCartContext();;
+
     return (
-        <img id="logoCarrito" src="/carrito-de-compras.png"/>
+        <div>
+            <span>{cartList.length > 0 ? cartList.length : "" }</span>
+            <img id="logoCarrito" src="/carrito-de-compras.png"/>
+        </div>
     )
 }
 

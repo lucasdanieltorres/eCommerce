@@ -1,5 +1,6 @@
- @import "./components/navbar/Nav.css";
+@import "./components/navbar/Nav.css";
 @import "./components/ItemListContainer/ItemListContainer.css"; 
+@import "./components/Loader/Loader.css";
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
