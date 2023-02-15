@@ -1,11 +1,13 @@
 import { useCartContext } from "../../context/CartContext";
 
 const LogoCarrito = () => {
-    const {cartList} = useCartContext();;
+    const {cartList} = useCartContext();
+
+    const {cantidadTotal} = useCartContext();
 
     return (
         <div>
-            <span>{cartList.length > 0 ? cartList.length : "" }</span>
+            <span>{cantidadTotal() > 0 ? cantidadTotal() : "" }</span>
             <img id="logoCarrito" src="/carrito-de-compras.png"/>
         </div>
     )
