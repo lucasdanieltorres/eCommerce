@@ -1,0 +1,16 @@
+.cartWidget {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  
+  .cartWidgetSpan {
+    text-decoration-style: none !important;
+    position: relative;
+    left: 15px;
+    top: 10px;
+    color: rgb(10, 31, 31);
+    background-color: rgb(255, 249, 240);
+    padding: 06px;
+    border-radius: 100px;
+  }

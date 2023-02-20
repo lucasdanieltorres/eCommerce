@@ -1,0 +1,32 @@
+@import "./components/navbar/Nav.css";
+@import "./components/ItemListContainer/ItemListContainer.css";
+@import "./components/Loader/Loader.css";
+@import "./components/Cart/cartWidget.css";
+@import "./components/CartContainer/CartContainer.css";
+@import "./components/itemDetail/ItemDetail.css";
+@import "./components/ItemCount/ItemCount.css";
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  color-scheme: light dark;
+  color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+ 

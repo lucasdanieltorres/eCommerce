@@ -1,0 +1,15 @@
+.itemCount {
+    background-color: #FCFEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 05px;
+    border: 01px solid rgba(245, 251, 253, 0.663)
+
+}
+
+.cant {
+    display: flex;
+}

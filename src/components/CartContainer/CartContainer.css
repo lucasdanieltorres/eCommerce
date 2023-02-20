@@ -1,0 +1,81 @@
+.cartLleno {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+.cartMain {
+    width: 90%;
+    /* height: 79vh; */
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    background-color: #D0DEEA;
+
+}
+
+.cartMain div {
+    padding: 10px;
+}
+
+.cartMain .form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 76vh;
+    margin-bottom: 10px;
+}
+
+.cartCard {
+    display: flex;
+    flex-direction: row;
+    width: 550px !important;
+}
+
+.cartCard .btnEliminar {
+    position: absolute;
+    right: 05px;
+    bottom: 05px;
+}
+
+.card-body h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+ 
+.precioTotal {
+    position: sticky;
+    bottom: 00px;
+    margin-top: 10px;
+    background-color: #87BBE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.cartVacio {
+    position: relative;
+    top: 20vh;
+    width:70%;
+    border-radius: 10px;
+    padding: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartVacio h3,
+.cartVacio button {
+    margin: 30px;
+}
+
