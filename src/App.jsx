@@ -5,7 +5,6 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import Nav from './components/navbar/Nav'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { CartContextProvider } from './context/CartContextProvider'
-import { app, mPromise } from './components/helpers/firebase'
 
 
 function App() {

@@ -1,11 +1,5 @@
 import React from 'react'
 import { useForm } from '../helpers/useForm'
-import { addDoc, collection, doc, getFirestore, updateDoc } from "firebase/firestore"
-
-
-
-
-
 
 const validationsForm = (form) => {
     let errors = {}
@@ -49,14 +43,18 @@ function OrderForm() {
     const {
         form,
         errors,
+        submitForm,
         handleChange,
         handleBlur,
         generarOrden } = useForm(initialForm, validationsForm)
 
         
 
+
+
     return (
         <div>
+
             <h2>Formulario de contacto</h2>
             <form onSubmit={generarOrden} className="form-control d-flex flex-column mx-2 mt-1 mb-5">
 
@@ -112,6 +110,8 @@ function OrderForm() {
                 {errors.validarMail && <p className='text-danger-emphasis'>{errors.validarMail}</p>}
 
                 <button className="btn btn-outline-success" type="submit">Generar orden</button>
+                
+            {   submitForm && <span className='text-success my-2 mx-auto'> Orden cargada con éxito!</span> }
             </form>
         </div>
     )

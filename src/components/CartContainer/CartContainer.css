@@ -11,9 +11,7 @@
 
 .cartMain {
     width: 90%;
-    /* height: 79vh; */
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: space-between;
     background-color: #D0DEEA;
 

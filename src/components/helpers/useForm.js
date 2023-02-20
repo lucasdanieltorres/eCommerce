@@ -8,6 +8,7 @@ export const useForm = (initialForm, validateForm) => {
     const { cartList, precioTotal } = useCartContext()
     const [form, setForm] = useState(initialForm);
     const [errors, setErrors] = useState({});
+    const [submitForm, setSubmitForm] = useState(false);
 
     const handleBlur = (e) => {
         handleChange(e);
@@ -33,17 +34,19 @@ export const useForm = (initialForm, validateForm) => {
     
         const db = getFirestore()
         const queryCollection = collection(db, "orders")
+        
+        setSubmitForm(true);
     
         //Insertar
         addDoc(queryCollection, order)
             .then(resp => console.log(resp))
             .catch(err => console.error(err))
-
     }
 
     return {
         form, 
-        errors,   
+        errors,
+        submitForm,
         handleChange, 
         handleBlur,
         generarOrden
